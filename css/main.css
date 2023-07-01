@@ -77,3 +77,14 @@ h3 {
     margin: 0 auto;
     padding: 0 10px;
 }
+
+/* Set all pictures in different sizes are all take 100% width */
+picture img, picture source {
+    max-width: 100%;
+}
+
+/* Set logo size */
+.logo {
+    width:80px;
+    height: auto;
+}

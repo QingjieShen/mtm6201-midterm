@@ -92,6 +92,8 @@ picture img, picture source {
 /* Style the header to create a collasible hamburger menu*/
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -129,7 +131,7 @@ label {
     cursor: pointer;
     font-size: 3rem;
     display: block;
-    background: url(../images/hamburger.svg) no-repeat left center;
+    background: url(../images/hamburger.svg) no-repeat right center;
     background-size: cover;
 }
 
@@ -154,3 +156,5 @@ nav {
 input:checked ~ nav {
     max-height: 100%;
 }
+
+/* Style the header to fit the screen size */

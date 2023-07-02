@@ -83,8 +83,74 @@ picture img, picture source {
     max-width: 100%;
 }
 
-/* Set logo size */
+/* Set logo size to match the heading */
 .logo {
     width:80px;
     height: auto;
+}
+
+/* Style the header to create a collasible hamburger menu*/
+header {
+    display: flex;
+}
+
+nav ul {
+    border: 1px solid black;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    width: 120px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li:nth-child(6) {
+    border-bottom: 0;
+}
+
+nav ul li:nth-child(1), nav ul li:nth-child(3), nav ul li:nth-child(4) {
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.hamburger {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* make the chekcbox to be a hamburger menu */
+label {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 3rem;
+    display: block;
+    background: url(../images/hamburger.svg) no-repeat left center;
+    background-size: cover;
+}
+
+/* hide the check box */
+input#menu {
+    display: none;
+}
+
+/* when clikc the check box, change the menu's background to create a collasp effect */
+input:checked + label {
+    background-image: url(../images/close.svg);
+}
+
+/* menu collapsed by default */
+nav {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0 0 50px;
+}
+
+/* when click shows the menu */
+input:checked ~ nav {
+    max-height: 100%;
 }

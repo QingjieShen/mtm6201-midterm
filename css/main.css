@@ -71,6 +71,13 @@ h3 {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+/* Define custom colors */
+body {
+    --link-color: #ED8922;
+    --discount-color: #359479;
+}
+
 /* End of basic setting */
 
 .wrapper {
@@ -176,7 +183,8 @@ input:checked ~ nav {
     text-align: center;
 }
 .promote .discount {
-    color: #359479;
+    /* use customed discount color */
+    color: var(--discount-color);
     font-size: 2rem;
 }
 
@@ -211,18 +219,18 @@ input:checked ~ nav {
 }
 
 /* Style the welcome part */
-.welcome .button {
+.welcome .welcome-button {
     text-align: center;
     margin: 20px auto;
 }
 
-.button button {
+.welcome-button button {
     padding: 10px 20px;
     width: 150px;
     background-color: black;
 }
 
-.button a {
+.welcome-button a {
     text-decoration: none;
     color: white;
 }
@@ -260,7 +268,8 @@ input:checked ~ nav {
 
 /* Style the service units */
 .service a {
-    color: #ED8922;
+    /* use customed link color */
+    color: var(--link-color);
 }
 
 .equipment p, .oil p, .formula p {
@@ -276,6 +285,7 @@ input:checked ~ nav {
 .announcement {
     background-color: rgba(244, 225, 199, 20%);
     padding: 10px;
+    margin-top: 20px;
 }
 
 .announcement p:nth-child(3) {
@@ -290,5 +300,67 @@ input:checked ~ nav {
 }
 
 .announcement a {
-    color: #ED8922;
+    /* use customed link color */
+    color: var(--link-color);
+}
+
+/* Style the activity part */
+.activity {
+    background-color: rgba(161, 217, 211, 20%);
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.activity p i {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.activity h2 {
+    margin-bottom: 10px;
+}
+
+.activity h3 {
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.discount-info {
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.activity .discount-info p i {
+    /* use customed discount color */
+    color: var(--discount-color);
+    font-size: 1.5rem;
+}
+
+.join-button {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.join-button button {
+    width: 150px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.join-button button:hover {
+    background-color: white;
+    color: black;
+}
+
+.activity .discount-info p i::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
 }

@@ -414,3 +414,36 @@ input:checked ~ nav {
 .product .pages i {
     padding: 10px;
 }
+
+/* Style the footer */
+footer {
+    background: rgba(0, 0, 0, 10%);
+}
+
+.footer-info{
+    display: flex;
+}
+
+footer .contact, footer .follow {
+    padding-top: 10px;
+    flex-basis: 50%;
+}
+
+.footer-info a:link {
+    /* again, use customed link color */
+    color: var(--link-color);
+}
+
+/* use ">" to select direct child p tag */
+footer .wrapper > p {
+    text-align: end;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+/* use attribute selector to select the link to unsplash */
+a[href="https://unsplash.com/"] {
+    color: var(--link-color);
+}

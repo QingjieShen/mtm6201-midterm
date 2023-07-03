@@ -301,7 +301,7 @@ input:checked ~ nav {
     margin-top: 10px;
     width: 100%;
     height: 30px;
-    border: 1px groove gray;
+    border: 1px groove rgba(167, 167, 167, 40%);
 }
 
 .announcement a {
@@ -557,7 +557,9 @@ a[href="https://unsplash.com/"] {
 .contact-info {
     /* use the cunstomed green background color */
     background-color: var(--green-background-color);
+    border-radius: 15px;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .contact-info p:first-child {
@@ -572,4 +574,34 @@ a[href="https://unsplash.com/"] {
 .contact-info p:last-child {
     font-style: italic;
     padding-left: 40px;
+}
+
+/* Style the address info */
+.address-info {
+    /* use the cunstomed yellow background color */
+    background-color: var(--yellow-background-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.address-info p:first-child {
+    text-align: start;
+}
+
+.address-info p:nth-child(2) {
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+
+.address-info p:nth-child(3) {
+    padding-left: 40px;
+    font-style: italic;
+}
+
+.address-info iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px groove rgba(167, 167, 167, 40%);
 }

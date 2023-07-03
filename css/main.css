@@ -269,4 +269,26 @@ input:checked ~ nav {
 
 .service picture source, .service picture img {
     border-radius: 100px;
+    width: 100%;
+}
+
+/* Style the announcement part */
+.announcement {
+    background-color: rgba(244, 225, 199, 20%);
+    padding: 10px;
+}
+
+.announcement p:nth-child(3) {
+    margin-top: 10px;
+}
+
+.announcement iframe {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px groove gray;
+}
+
+.announcement a {
+    color: #ED8922;
 }

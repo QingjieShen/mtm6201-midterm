@@ -68,7 +68,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -435,7 +435,7 @@ footer .contact, footer .follow {
     flex-basis: 50%;
 }
 
-.footer-info a:link {
+.footer-info a {
     /* again, use customed link color */
     color: var(--link-color);
 }
@@ -618,4 +618,23 @@ a[href="https://unsplash.com/"] {
 
 .statement-info p {
     margin: 10px auto;
+}
+
+/* Sthle the FAQ part */
+/* use child selector to select wanted tags */
+.faq > div {
+    padding-left: 10px;
+}
+
+.faq > div p {
+    font-style: italic;
+    color: gray;
+}
+
+.faq > p {
+    text-align: end;
+}
+
+.faq > p a {
+    color: var(--link-color);
 }

@@ -76,6 +76,9 @@ h3 {
 body {
     --link-color: #ED8922;
     --discount-color: #359479;
+    --green-background-color: rgba(161, 217, 211, 20%);
+    --yellow-background-color: rgba(244, 225, 199, 20%);
+
 }
 
 /* End of basic setting */
@@ -284,7 +287,8 @@ input:checked ~ nav {
 
 /* Style the announcement part */
 .announcement {
-    background-color: rgba(244, 225, 199, 20%);
+    /* using cunstomed yellow background color */
+    background-color: var(--yellow-background-color);
     padding: 10px;
     margin-top: 20px;
 }
@@ -307,7 +311,8 @@ input:checked ~ nav {
 
 /* Style the activity part */
 .activity {
-    background-color: rgba(161, 217, 211, 20%);
+    /* using cunstomed green background color */
+    background-color: var(--green-background-color);
     margin: 20px auto;
     padding: 10px;
 }
@@ -418,6 +423,7 @@ input:checked ~ nav {
 /* Style the footer */
 footer {
     background: rgba(0, 0, 0, 10%);
+    margin-top: 20px;
 }
 
 .footer-info{
@@ -439,11 +445,58 @@ footer .wrapper > p {
     text-align: end;
     font-family: 'Comic Neue', cursive;
     font-style: italic;
-    font-weight: bold;
     padding-right: 10px;
 }
 
 /* use attribute selector to select the link to unsplash */
 a[href="https://unsplash.com/"] {
     color: var(--link-color);
+}
+/* End of Home page styling */
+
+/* Style the about page */
+/* Style the about pge banner and history info*/
+.about-banner source, .about-banner img {
+    margin: 20px auto;
+}
+
+.history h2 {
+    margin-bottom: 10px;
+}
+
+.history p {
+    margin: 10px auto;
+}
+
+/* Style the mission statement info */
+.mission p {
+    margin: 10px auto;
+    /* using customed yellow background color */
+    background-color: var(--yellow-background-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Style the vision statement info */
+.vision h2 {
+    margin: 10px auto;
+}
+
+.vision p {
+    margin: 10px auto;
+    /* using cunstomed green background color */
+    background-color: var(--green-background-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.vision .vision-button {
+    text-align: center;
+}
+
+.vision .vision-button button {
+    width: 150px;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
 }

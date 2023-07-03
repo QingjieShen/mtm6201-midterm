@@ -11,8 +11,7 @@
     <title>Dream Night</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
+    <header class="wrapper">
             <div class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 137.42 59.21">
                     <path d="M27.77 25.07c.3 10.62-8.33 19.24-18.94 19.53-3.16.09-6.16-.61-8.83-1.89 5.04 6.95 13.32 11.38 22.55 11.12 14.86-.41 26.58-12.8 26.17-27.66C48.3 11.31 35.92-.4 21.05.01 14.57.19 8.68 2.65 4.14 6.61c1.17-.26 2.38-.42 3.62-.45 10.62-.3 19.72 8.3 20.01 18.92Z"/>
@@ -36,8 +35,8 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-        <main>
+    </header>
+    <main class="wrapper">
             <div class="promote">
                 <!-- discount information -->
                 <div>
@@ -57,7 +56,9 @@
                     The home of luxurious and all-nature aroma oils designed to soothe your senses and transport you to a peaceful statete of mind.
                 </p>
                 <div class="welcome-button">
-                    <button type="button"><a href="about.html">Story about us</a></button>
+                    <form action="about.html">
+                        <button type="submit" onclick="about.html">Story about us</a></button>
+                    </form>
                 </div>
             </div>
             <!-- Service part mixed with text and links, use grid to style it -->
@@ -98,6 +99,7 @@
                 </p>
                 <p>Address: <a href="#">Wellington St, Ottawa, ON K1A 0A9</a></p>
                 <p>Opening: Mon - Fri 08:00 - 18:00</p>
+                <!-- insert google map info -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4914178672984!2d-75.71181921012548!3d45.41959436183835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce045a7a4831e5%3A0xcb7f2bab75407e44!2sWellington%20St!5e0!3m2!1sen!2sca!4v1688007870948!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="activity">
@@ -112,31 +114,37 @@
                     <button type="button">Join Now</button>
                 </div>
             </div>
-            <div class="pruduct">
-                <div>
+            <div class="product">
+                <div class="item">
                     <picture>
                         <source media="(min-width: 600px)" srcset="images/commodity1.jpg"/>
                         <source media="(max-width: 599px)" srcset="images/commodity1-600_x_900.jpg"/>
                         <img src="images/commodity1.jpg" alt="image of aroma product">
                     </picture>
-                    <button type="button">Buy Now</button>
+                    <div class="product-button">
+                        <button type="button">Buy now</button>
+                    </div>
                 </div>
-                <div>
+                <div class="item">
                     <picture>
                         <source media="(min-width: 600px)" srcset="images/commodity2.jpg"/>
                         <source media="(max-width: 599px)" srcset="images/commodity2-600_x_900.jpg"/>
                         <img src="images/commodity2.jpg" alt="image of aroma product">
                     </picture>
-                    <button type="button">Buy Now</button>
+                    <div class="product-button">
+                        <button type="button">Buy now</button>
+                    </div>
                 </div>
+                <!-- Using icons from fontawesome -->
                 <div class="pages">
                     <i class="fa-solid fa-circle"></i>
                     <i class="fa-regular fa-circle"></i>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
-        </main>
-        <footer>
+    </main>
+    <footer>
+        <div class="wrapper">
             <div class="contact">
                 <p>Tel: +1 (777) 777 7777</p>
                 <p><a href="#">Join Us</a></p>
@@ -148,8 +156,8 @@
             </div>
             <hr>
             <p>&copy; Copyright Dream Night Aroma Oil All Rights Reserved 2023</p>
-            <p>All images are taken from <a href="https://unsplash.com/" target="_blank"> Unsplash</a></p>
-        </footer>
-    </div>
+            <p>All images are taken from <a href="https://unsplash.com/" target="_blank"> Unslash</a></p>
+        </div>        
+    </footer>
 </body>
 </html>

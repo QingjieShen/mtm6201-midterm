@@ -84,6 +84,7 @@ body {
     margin: 0 auto;
     padding: 0 10px;
     min-width: 580px;
+    max-width: 1000px;
 }
 
 /* Set all pictures in different sizes are all take 100% width */
@@ -230,7 +231,7 @@ input:checked ~ nav {
     background-color: black;
 }
 
-.welcome-button a {
+.welcome-button button {
     text-decoration: none;
     color: white;
 }
@@ -361,6 +362,55 @@ input:checked ~ nav {
     color: black;
 }
 
+/* Add some space before discount number */
 .activity .discount-info p i::before {
     content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+
+/* Style the product list part, using grid */
+.product {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.item:first-child {
+    grid-column: 1/2;
+    margin-left: 30px;
+}
+
+.item:nth-child(2) {
+    grid-column: 2/3;
+    margin-right: 30px;
+}
+
+.pages {
+    grid-column: 1/3;
+}
+
+.item picture source, .item picture img {
+    border-radius: 40px;
+}
+
+.item .product-button{
+    text-align: center;
+}
+
+.item .product-button button {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: black;
+    color: white;
+}
+
+/* Style the product page part */
+.product .pages {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.product .pages i {
+    padding: 10px;
 }

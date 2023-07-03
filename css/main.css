@@ -512,4 +512,40 @@ a[href="https://unsplash.com/"] {
     margin: 10px auto;
 }
 
+/* Style the contact form */
+.contact-form form {
+    /* use the cunstomed yellow background color */
+    background-color: var(--yellow-background-color);
+    padding: 10px;
+}
+
+/* Add * to the head of all lables */
+.contact-form form label::before {
+    content: "*";
+}
+
+.contact-form form label {
+    display: inline-block;
+    width: 80px;
+}
+
+.contact-form form input, .contact-form form textarea {
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+.contact-form form > div {
+    margin: 10px auto;
+}
+
+.contact-form .submit-button {
+    text-align: end;
+}
+
+.contact-form .submit-button button {
+    width: 150px;
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+}
 

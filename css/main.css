@@ -201,10 +201,28 @@ input:checked ~ nav {
     font-family: 'Comic Neue', cursive;
     font-style: italic;
     font-weight: bold;
+    font-size: 1.5rem;
     transition: 0.2s;
 }
 
 .promote button:hover {
     background-color: white;
     color: black;
+}
+
+/* Style the welcome part */
+.welcome .button {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.button button {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: black;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
 }

@@ -56,7 +56,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: 'Sawarabi Gothic', sans-serif;
 }
@@ -76,6 +76,7 @@ h3 {
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
+    min-width: 580px;
 }
 
 /* Set all pictures in different sizes are all take 100% width */
@@ -158,3 +159,52 @@ input:checked ~ nav {
 }
 
 /* Style the header to fit the screen size */
+
+
+/* Style home page discount part */
+.promote {
+    font-family: 'Comic Neue', cursive;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.promote :first-child {
+    width: 100%;
+    text-align: center;
+}
+.promote .discount {
+    color: #359479;
+    font-size: 2rem;
+}
+
+.promote p:nth-child(2) {
+    text-align: center;
+    width: 100%;
+}
+
+.promote i {
+    padding-right: 10px;
+}
+
+/* put the button on the right side and add a hover effect */
+.promote button {
+    float: right;
+    width: 40%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.promote button:hover {
+    background-color: white;
+    color: black;
+}

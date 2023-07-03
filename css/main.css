@@ -605,3 +605,17 @@ a[href="https://unsplash.com/"] {
     height: 30px;
     border: 1px groove rgba(167, 167, 167, 40%);
 }
+
+/* Style the statement info */
+.statement-info {
+    margin-bottom: 20px;
+}
+
+.statement-info a {
+    /* use the cunstomed link color */
+    color: var(--link-color);
+}
+
+.statement-info p {
+    margin: 10px auto;
+}

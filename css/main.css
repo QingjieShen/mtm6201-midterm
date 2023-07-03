@@ -226,3 +226,47 @@ input:checked ~ nav {
     text-decoration: none;
     color: white;
 }
+
+/* Style the service part by using grid area */
+.service {
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "statement equipment"
+    "oil formula"
+    ;
+    gap: 30px;
+}
+
+.service h2 {
+    grid-area: head;
+}
+
+.statement {
+    grid-area: statement;
+}
+
+.equipment {
+    grid-area: equipment;
+}
+
+.oil {
+    grid-area: oil;
+}
+
+.formula {
+    grid-area: formula;
+}
+
+/* Style the service units */
+.service a {
+    color: #ED8922;
+}
+
+.equipment p, .oil p, .formula p {
+    text-align: center;
+}
+
+.service picture source, .service picture img {
+    border-radius: 100px;
+}

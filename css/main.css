@@ -508,6 +508,10 @@ a[href="https://unsplash.com/"] {
     margin: 20px auto 10px auto;
 }
 
+.contact-form {
+    margin-bottom: 20px;
+}
+
 .contact-form p {
     margin: 10px auto;
 }
@@ -549,3 +553,23 @@ a[href="https://unsplash.com/"] {
     color: white;
 }
 
+/* Style the contact info */
+.contact-info {
+    /* use the cunstomed green background color */
+    background-color: var(--green-background-color);
+    padding: 10px;
+}
+
+.contact-info p:first-child {
+    text-align: start;
+}
+
+.contact-info p:nth-child(2) {
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+
+.contact-info p:last-child {
+    font-style: italic;
+    padding-left: 40px;
+}

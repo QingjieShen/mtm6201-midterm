@@ -137,7 +137,7 @@ nav ul li a {
 }
 
 /* make the chekcbox to be a hamburger menu */
-label {
+.nav-label {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -500,3 +500,16 @@ a[href="https://unsplash.com/"] {
     background-color: black;
     color: white;
 }
+/* End of About page styling */
+
+/* Style the Contact page */
+/* Style the Contact page banner and introduction info*/
+.contact-form source, .contact-form img {
+    margin: 20px auto 10px auto;
+}
+
+.contact-form p {
+    margin: 10px auto;
+}
+
+

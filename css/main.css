@@ -644,3 +644,29 @@ a[href="#maincontent"] {
     display: inline-block;
     margin-bottom: 20px;
 }
+
+/* add animation */
+/* when hover a clickble menu button, make it bigger */
+.hamburger nav ul li a {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.hamburger nav ul li a:hover {
+    transform: scale(1.4);
+}
+
+.hamburger {
+    transition: 0.2s;
+    transform-origin: 25px 25px;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+}
+
+/* add fadein effect to all images. Using animation from "animate.style" */
+.logo, picture source, picture img {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}

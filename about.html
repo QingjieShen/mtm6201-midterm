@@ -16,7 +16,7 @@
 
 <body>
     <a class="wrapper" href="#maincontent">Skip to Content &darr;</a>
-    <header class="wrapper">
+    <header class="wrapper" role="banner">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 137.42 59.21">
                 <path
@@ -31,9 +31,10 @@
         </div>
         <h1>Dream Night</h1>
         <div class="hamburger">
+            <!-- use checkbox to identify the state of menu -->
             <input type="checkbox" id="menu">
             <label for="menu" class="nav-label"></label>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>Online Store</li>
@@ -45,14 +46,14 @@
             </nav>
         </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper" role="main">
         <picture class="about-banner">
             <source media="(min-width: 600px)" srcset="images/about-banner.jpg" />
             <source media="(max-width: 599px)" srcset="images/about-banner-boo_x_400.jg" />
             <img src="images/about-banner.jpg" alt="image of us">
         </picture>
-        <div class="history">
-            <h2>History of Dream night</h2>
+        <div class="history" role="region">
+            <h2 id="maincontent">History of Dream night</h2>
             <p>Dream Night is an exquisite aroma oil brand designed for young ladies between theages of 20-30 who love
                 to explore DIY formulas.
             </p>
@@ -64,7 +65,7 @@
                 <img src="images/history-shop.jpg" alt="image of our shop">
             </picture>
         </div>
-        <div class="mission">
+        <div class="mission" role="region">
             <h2>Our Mission</h2>
             <p>"Help people feel relaxed and achieve a deep, restful sleep."</p>
             <picture>
@@ -73,7 +74,7 @@
                 <img src="images/mission.jpg" alt="image of our mission">
             </picture>
         </div>
-        <div class="vision">
+        <div class="vision" role="region">
             <h2>We Hope</h2>
             <p>To create a world where women can easily and naturally incorporate self care prctices into their busy lives, leading to increased happiness, productivity, and overall well-beng.</p>
             <div class="vision-button">
@@ -81,7 +82,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="wrapper">
             <div class="footer-info">
                 <div class="contact">

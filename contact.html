@@ -16,7 +16,7 @@
 
 <body>
     <a class="wrapper" href="#maincontent">Skip to Content &darr;</a>
-    <header class="wrapper">
+    <header class="wrapper" role="banner">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 137.42 59.21">
                 <path
@@ -31,9 +31,10 @@
         </div>
         <h1>Dream Night</h1>
         <div class="hamburger">
+            <!-- use checkbox to identify the state of menu -->
             <input type="checkbox" id="menu">
             <label for="menu" class="nav-label"></label>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>Online Store</li>
@@ -45,16 +46,16 @@
             </nav>
         </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper" role="main">
         <div class="contact-form">
             <picture>
                 <source media="(min-width: 600px)" srcset="images/contact-banner.jpg" />
                 <source media="(min-width: 599px)" srcset="images/contact-banner-600_x_377.jpg" />
                 <img src="images/contact-banner.jpg" alt="image of night sky">
             </picture>
-            <p>At Dream Night, we value your feedback and strive to provide the best possible customer experience.</p>
+            <p id="maincontent">At Dream Night, we value your feedback and strive to provide the best possible customer experience.</p>
             <p>Don't hesitate to reach out to us. we're always happy to assist you with any inquiries or concerns.</p>
-            <form action="contact.html" method="post">
+            <form action="contact.html" method="post" role="form">
                 <div>
                     <label for="fullname">Name</label>
                     <input id="fullname" name="fullname" type="text" placeholder="First & Last" required>
@@ -76,12 +77,12 @@
                 </div>
             </form>
         </div>
-        <div class="contact-info">
+        <div class="contact-info" role="region">
             <p>Tel</p>
             <p>+1 (777) 777 7777</p>
             <p>Available: Mon to Fri 9:00 - 17:00</p>
         </div>
-        <div class="address-info">
+        <div class="address-info" role="region">
             <p>Add</p>
             <p>Wellington St, Ottawa, ON</p>
             <p>Opening: Mon to Fri 8:00 - 18:00</p>
@@ -91,7 +92,7 @@
             <p>Please feel free to email us at <a href="mailto:info@dreamnight.com">info@dreamnight.com</a> with any questions or concerns. We aim to respond to all customer inquiries within 24 hours.</p>
             <p>You can also contact us at Instagram: <a href="https://www.instagram.com/clark_shen22/">@dream-night-oil</a> and Facebook: <a href="https://www.facebook.com/profile.php?id=100090278334237">@dream- night-oil</a></p>
         </div>
-        <div class="faq">
+        <div class="faq" role="region">
             <h2>FAQ</h2>
             <div>
                 <h3>What is Dream Night?</h3>
@@ -116,7 +117,7 @@
             <p><a href="#">See more FAQs</a></p>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="wrapper">
             <div class="footer-info">
                 <div class="contact">

@@ -15,7 +15,7 @@
 </head>
 <body>
     <a class="wrapper" href="#maincontent">Skip to Content &darr;</a>
-    <header class="wrapper">
+    <header class="wrapper" role="banner">
         <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 137.42 59.21">
                 <path
@@ -33,7 +33,7 @@
             <!-- use checkbox to identify the state of menu -->
             <input type="checkbox" id="menu">
             <label for="menu" class="nav-label"></label>
-            <nav>
+            <nav role="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>Online Store</li>
@@ -45,8 +45,8 @@
             </nav>
         </div>
     </header>
-    <main class="wrapper">
-        <div class="promote">
+    <main class="wrapper" role="main">
+        <div class="promote" role="region">
             <!-- discount information -->
             <div>
                 <p>Join Membership and get</p>
@@ -54,7 +54,7 @@
             </div>
             <button type="button">Join Now</button>
         </div>
-        <div class="welcome">
+        <div class="welcome" role="region">
             <!-- when screen size is under 600px, use the smaller image -->
             <picture class="home-banner">
                 <source media="(min-width: 600px)" srcset="images/home-banner.jpg" />
@@ -66,14 +66,14 @@
                 The home of luxurious and all-nature aroma oils designed to soothe your senses and transport you to a
                 peaceful statete of mind.
             </p>
-            <div class="welcome-button">
+            <div class="welcome-button" role="region">
                 <form action="about.html">
                     <button type="submit" onclick="about.html">Story about us</a></button>
                 </form>
             </div>
         </div>
         <!-- Service part mixed with text and links, use grid to style it -->
-        <div class="service">
+        <div class="service" role="region">
             <h2>Dream a better life</h2>
             <div class="statement">
                 <p>We pride ourselves on using only the highest quality ingredients to create our products, ensure that
@@ -104,7 +104,7 @@
                 <p><a href="#">Original oil & Formula</a></p>
             </div>
         </div>
-        <div class="announcement">
+        <div class="announcement" role="region">
             <h2>We are Ready to go</h2>
             <p>
                 Get ready to experience the ultimate in relaxation and self-care! Dream Night is proud to announce the
@@ -117,7 +117,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4914178672984!2d-75.71181921012548!3d45.41959436183835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce045a7a4831e5%3A0xcb7f2bab75407e44!2sWellington%20St!5e0!3m2!1sen!2sca!4v1688007870948!5m2!1sen!2sca"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="activity">
+        <div class="activity" role="region">
             <h2>Buy more save more</h2>
             <p>Earn extra points with every purchase that can use towards future discounts. Save big with our membership
                 program! For every <i>$10</i> spent, you'll earn <i>1</i> point. Once you'll earn <i>10</i> points,
@@ -131,7 +131,7 @@
                 <button type="button">Join Now</button>
             </div>
         </div>
-        <div class="product">
+        <div class="product" role="region">
             <div class="item">
                 <picture>
                     <source media="(min-width: 600px)" srcset="images/commodity1.jpg" />
@@ -160,7 +160,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="wrapper">
             <div class="footer-info">
                 <div class="contact">

@@ -99,6 +99,11 @@ picture img, picture source {
 .logo {
     width:80px;
     height: auto;
+    /* align-self: center; */
+}
+
+.logo > svg {
+    margin-top: 15px;
 }
 
 /* Style the header to create a collasible hamburger menu*/
@@ -134,6 +139,12 @@ nav ul li a {
 .hamburger {
     padding-top: 10px;
     padding-left: 10px;
+    display: flex;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
 }
 
 /* make the chekcbox to be a hamburger menu */
@@ -145,6 +156,7 @@ nav ul li a {
     display: block;
     background: url(../images/hamburger.svg) no-repeat right center;
     background-size: cover;
+    order: 1;
 }
 
 /* hide the check box */
@@ -654,15 +666,6 @@ a[href="#maincontent"] {
 
 .hamburger nav ul li a:hover {
     transform: scale(1.4);
-}
-
-.hamburger {
-    transition: 0.2s;
-    transform-origin: 25px 25px;
-}
-
-.hamburger:hover {
-    transform: scale(1.1);
 }
 
 /* add fadein effect to all images. Using animation from "animate.style" */

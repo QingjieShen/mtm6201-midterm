@@ -659,7 +659,7 @@ a[href="https://unsplash.com/"] {
 
 /* add margin to the skip content link */
 a[href="#maincontent"] {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -678,4 +678,30 @@ a[href="#maincontent"] {
 .logo, picture source, picture img {
     animation-name: fadeIn;
     animation-duration: 2s;
+}
+
+/* use animation property add animation to normal button */
+@keyframes noticing {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nor-button {
+    animation: noticing 2s infinite;
+
+}
+
+.nor-button:hover {
+    transform: translateY(-6px);
+    background-color: white;
+    color: black;
 }

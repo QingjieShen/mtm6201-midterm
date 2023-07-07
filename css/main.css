@@ -266,6 +266,7 @@ input:checked ~ nav {
     "oil formula"
     ;
     gap: 30px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .service h2 {

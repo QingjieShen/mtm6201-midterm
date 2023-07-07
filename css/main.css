@@ -86,7 +86,7 @@ body {
 .wrapper {
     margin: 0 auto;
     padding: 0 10px;
-    min-width: 580px;
+    min-width: 400px;
     max-width: 1000px;
 }
 

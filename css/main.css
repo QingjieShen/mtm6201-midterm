@@ -701,6 +701,7 @@ a[href="#maincontent"] {
 
 }
 
+/* when hover on the button change bg color and font color */
 .nor-button:hover {
     transform: translateY(-6px);
     background-color: white;
